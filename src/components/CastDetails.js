@@ -14,7 +14,7 @@ class CastDetials extends React.Component {
         
         this.setState({loading: true});
         try {
-        const url = "http://www.randyconnolly.com/funwebdev/3rd/api/movie/movies.php?id=" + this.props.location.state.id;
+        const url = "https://www.randyconnolly.com/funwebdev/3rd/api/movie/movies.php?id=" + this.props.location.state.id;
         const response = await fetch(url);
         const jsonData = await response.json();
         
