@@ -16,6 +16,7 @@ class App extends React.Component {
     this.state = { movies: [], favorites: [], loading: false};
    }
 
+   //Add Fav to array
    addFavClick = (e) => {
     let check = undefined;
     let tempArray = this.state.favorites;
@@ -28,6 +29,7 @@ class App extends React.Component {
       this.setState({favorites: tempArray})
     }}
 
+    //Remove Fav from Array
     removeFav = (e) =>{
       let check = [];
       let tempArray = this.state.favorites;
@@ -39,10 +41,7 @@ class App extends React.Component {
 
     }
    
-    
-    
-   
-
+    //fetch code from API
    async componentDidMount() {
     this.setState({loading: true});
     try {
@@ -61,13 +60,10 @@ class App extends React.Component {
     }
    }
 
-   
-
-  
-
   render() {
     const loading = this.state.loading;
-    
+    //use the loading to display loader wheel from Loader 
+    //return routes for access to pages, pass items they require, messy process 
   return (
   <main>
   <HeaderApp />

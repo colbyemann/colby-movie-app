@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 class ToggleBox extends React.Component {
-
+//All 4 tooglebox components are modified from https://www.golangprograms.com/reactjs-show-hide-component-on-click.html
 	constructor(props) {
 		super(props);
 		this.state = {

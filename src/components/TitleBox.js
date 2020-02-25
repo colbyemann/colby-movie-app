@@ -4,12 +4,14 @@ import Modal, {closeStyle} from 'simple-react-modal'
 
 
 class TitleBox extends React.Component {
+//this component creates the panel with the single film data, and poster
 
     constructor(){
         super()
         this.state = {}
       }
 
+    //these functions filter if company, country, keywords, or genres are empty in array
     comp =(comp) =>{
         if(comp === null || comp === undefined)
         {
@@ -82,7 +84,7 @@ class TitleBox extends React.Component {
                    <div>
                 <a onClick={this.show.bind(this)}><img src={url} alt={this.props.movie.title}/></a>
       <Modal
-    
+        //Modal Compent used from https://codepen.io/ph1p/pen/XjNONb
       containerStyle={{background: '#C8D5B9', width: "800px"}} //changes styling on the inner content area
       closeOnOuterClick={true}
       show={this.state.show}

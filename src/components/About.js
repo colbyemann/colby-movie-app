@@ -20,10 +20,11 @@ export default class App extends React.Component{
   render(){
     return (
       <div>
+        
       <a onClick={this.show.bind(this)}><button>About</button></a>
       <Modal
       //this will completely overwrite the default css completely
-      
+      //Modal Compent used from https://codepen.io/ph1p/pen/XjNONb
       containerStyle={{background: '#C8D5B9'}} //changes styling on the inner content area
       closeOnOuterClick={true}
       show={this.state.show}
@@ -49,15 +50,6 @@ export default class App extends React.Component{
     )
   }
 }
-/* 
-          <h1>About</h1>
-          <h3>Colby Emann</h3>
-          <a href=""><h3>Github</h3></a>
-          <br></br>
-          <h3>Resources</h3>
-          <a href="https://www.npmjs.com/package/react-rangeslider"><p>https://www.npmjs.com/package/react-rangeslider</p></a>
-          <a href="https://www.npmjs.com/package/fuzzy-search"><p>https://www.npmjs.com/package/fuzzy-search</p></a>
-          <a href="https://www.npmjs.com/package/@fortawesome/react-fontawesome"><p>https://www.npmjs.com/package/@fortawesome/react-fontawesome</p></a>
-          <a href="https://unsplash.com/photos/Lq6rcifGjOU"><p>https://unsplash.com/photos/Lq6rcifGjOU</p></a> */
+
           
      
