@@ -5,7 +5,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 class Rating extends React.Component {
     //this component creates the star rating, via rounding math, and adds a half star if decimal place
-
+    //stars from font awesome https://www.npmjs.com/package/@fortawesome/react-fontawesome
 
     stars = () =>{let rounded = Math.round(this.props.rating*2)/2; 
                     if(rounded % 1 != 0){

@@ -10,7 +10,7 @@ class MovieDetials extends React.Component {
         this.state = { movie: [],  loading: false};
        }
 
-       
+    //fetch array of single movie data
     async componentDidMount() {
         
         this.setState({loading: true});

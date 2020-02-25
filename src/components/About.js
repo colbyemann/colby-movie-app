@@ -42,7 +42,7 @@ export default class App extends React.Component{
           <a href="https://www.npmjs.com/package/@fortawesome/react-fontawesome"><p>Font Awesome</p></a>
           <a href="https://unsplash.com/photos/Lq6rcifGjOU"><p>Hero Image</p></a>
           <a href="https://github.com/glenselle/simple-react-modal"><p>Simple Modal</p></a>
-          <a href="http://reactcommunity.org/"><p>React Transition Group</p></a>
+          <a href="http://reactcommunity.org/react-transition-group/transition"><p>React Transition Group</p></a>
           
 
       </Modal>

@@ -5,6 +5,7 @@ import ToggleBoxClosed from "./ToggleBoxClosed.js";
 
 class CastBox extends React.Component {
 
+    //see if cast array is empty, if not populate with cast members
     cast =(cast) =>{
         if(cast === null || cast === undefined)
         {
@@ -25,6 +26,7 @@ class CastBox extends React.Component {
         }
     }
 
+    //this works the same as cast, even though you mentioned all items have crew. Future proof!
     crew =(crew) =>{
         if(crew === null || crew === undefined)
         {
@@ -43,7 +45,7 @@ class CastBox extends React.Component {
     
     render(){
       
-        
+        //toogle box compentents used to open and close divs, heavily modified from https://www.digitalocean.com/community/tutorials/how-to-build-a-custom-toggle-switch-with-react
         return(
             <article class="wings"> 
              <Link  to={{

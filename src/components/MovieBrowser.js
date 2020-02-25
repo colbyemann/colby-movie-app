@@ -12,7 +12,8 @@ class PhotoBrowser extends React.Component {
         loading: false
     }
 
-       
+   //spcific searchs created for each option, title, year, rating    
+   //fuzzy search engine, retrived from https://www.npmjs.com/package/fuzzy-search, doesn't work good!
     searchTitle  = (event) => {
         this.setState({loading: true});
         if(event === '')

@@ -6,7 +6,7 @@ import ToggleFilters from "./ToggleFilters.js";
  
 // To include the default styles
 import 'react-rangeslider/lib/index.css'
-import { Link } from "react-router-dom";
+
 class MovieFilters extends React.Component {
     constructor(props) {
         super(props);
@@ -49,6 +49,7 @@ class MovieFilters extends React.Component {
 
        }
 
+       //functions save change events for sliders and textboxes
        handleOptionChange = (changeEvent) => {
         this.setState({
           selectedOption: changeEvent.target.value
@@ -84,7 +85,7 @@ class MovieFilters extends React.Component {
 
 
  render() {
-     
+     //sliders retrived from https://www.npmjs.com/package/react-rangeslider
  return (
     
     <aside >

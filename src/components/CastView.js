@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 class CastView extends React.Component {
-
+//pulls from tmdb api key and makes array of cast member information
     constructor(){
         super()
         this.state = {cast: []}

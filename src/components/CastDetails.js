@@ -5,6 +5,7 @@ import Loader from './Loader.js';
 import Favorites from "./Favorites.js";
 
 class CastDetials extends React.Component {
+    //component called when view cast member button is clicked, re-populates cast and crew panel
     constructor(props) {
         super(props);
         this.state = { movie: [],  loading: false, cast: []}
@@ -25,12 +26,6 @@ class CastDetials extends React.Component {
         console.error(error);
         }
        }
-
-       
-    
-    
-
-       
 
        render(){
            const loading = this.state.loading;

@@ -20,6 +20,7 @@ class FavoriteItem extends React.Component {
         let url = "https://image.tmdb.org/t/p/w92"  + this.props.fav.poster;
         
         return (
+          //css transition modified from example https://wikiwi.github.io/react-css-transition/
             <CSSTransition
           defaultStyle={{ transform: "translate(0, 0)" }}
           enterStyle={{ transform: transit("translate(50px, 0)", 500, "ease-in-out") }}
